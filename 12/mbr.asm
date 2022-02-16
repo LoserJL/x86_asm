@@ -99,7 +99,7 @@
     string      db 's0ke4or92xap3fv8giuzjcy5l1m7hd6bnqtw.'
 
     pgdt        db 0
-                db 0x00007e00               ;GDT的物理地址
+                dd 0x00007e00               ;GDT的物理地址
 
     times 510-($-$$)    db 0
                         db 0x55,0xaa
