@@ -32,7 +32,7 @@
         mov dword [ebx+0x24],0x00cf9600
 
         ;初始化描述符表寄存器GDTR
-        mov dword [cs:pgdt+0x7c00],39   ;描述符表的界限
+        mov word [cs:pgdt+0x7c00],39   ;描述符表的界限
 
         lgdt [cs:pgdt+0x7c00]
 
